@@ -60,7 +60,7 @@ test:
     - vaex.ui.plugin
 
 app:
-  entry: glue
+  entry: vaex
   icon: vaex512.png
   summary: Visualize and explore large (~billion rows/objects) tabular datasets interactively
   type: desk
