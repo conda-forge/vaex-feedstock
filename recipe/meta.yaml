@@ -13,7 +13,7 @@ source:
 
 build:
   skip: true  # [win]
-  number: 1
+  number: 2
   script: python setup.py install --single-version-externally-managed --record record.txt
   osx_is_app: True
   entry_points:
@@ -47,6 +47,8 @@ requirements:
     - pandas
     - pillow
     - requests
+    - kapteyn
+    - healpy
     - python.app  # [osx]
 
 test:
