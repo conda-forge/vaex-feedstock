@@ -47,6 +47,8 @@ requirements:
     - pandas
     - pillow
     - requests
+    - kapteyn
+    - healpy
     - python.app  # [osx]
 
 test:
