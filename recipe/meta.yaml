@@ -1,6 +1,6 @@
 {% set name = "vaex" %}
-{% set version = "1.0.0b3" %}
-{% set sha256 = "14336a98579caeb98afb1bfdcb4c2787208525ea54e355b3c404d247791f3bb1" %}
+{% set version = "1.0.0b4" %}
+{% set sha256 = "9f8dcd3c60a306629273f9821603926cb5ccbc149206092943e16cd6956a64c3" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   skip: true  # [win]
-  number: 2
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
   osx_is_app: True
   entry_points:
