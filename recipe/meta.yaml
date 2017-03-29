@@ -47,7 +47,7 @@ requirements:
     - pillow
     - requests
     - kapteyn
-    - healpy # [not win]
+    - healpy  # [not win]
     - python.app  # [osx]
 
 test:
