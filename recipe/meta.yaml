@@ -47,7 +47,7 @@ requirements:
     - pandas
     - pillow
     - requests
-    - kapteyn
+    - kapteyn  # [not win]
     - python.app  # [osx]
 
 test:
