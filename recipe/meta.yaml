@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
+  fn: vaex-1.0.0b4.tar.gz
 #  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   url: https://www.astro.rug.nl/~breddels/vaex/vaex-1.0.0b4.tar.gz
   sha256: {{ sha256 }}
