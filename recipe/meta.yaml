@@ -1,6 +1,6 @@
 {% set name = "vaex" %}
 {% set version = "1.0.0b5" %}
-{% set sha256 = "265419f25c6ddbd363aab321017107ef7dddf98d26583e7521084596c4031437" %}
+{% set sha256 = "9074af295e760747c1861331fef9481169b34a1d4a5b089f727fd75f3a2d1bab" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +8,11 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-#  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  url: https://www.astro.rug.nl/~breddels/vaex/vaex-1.0.0b5.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
   osx_is_app: True
   entry_points:
@@ -48,6 +47,7 @@ requirements:
     - pillow
     - requests
     - kapteyn  # [not win]
+    - healpy  # [(not win) and (py27 or py34 or py35)]
     - python.app  # [osx]
 
 test:
