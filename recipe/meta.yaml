@@ -1,15 +1,15 @@
 {% set name = "vaex" %}
 {% set version = "1.0.0b5" %}
-{% set sha256 = "bbc069fcef4fd1cc8cc59a231496ea5394bc2ff65ca2d8bd99a7b18ea68423fd" %}
+{% set sha256 = "265419f25c6ddbd363aab321017107ef7dddf98d26583e7521084596c4031437" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: vaex-1.0.0b4.tar.gz
+  fn: {{ name }}-{{ version }}.tar.gz
 #  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  url: https://www.astro.rug.nl/~breddels/vaex/vaex-1.0.0b4.tar.gz
+  url: https://www.astro.rug.nl/~breddels/vaex/vaex-1.0.0b5.tar.gz
   sha256: {{ sha256 }}
 
 build:
