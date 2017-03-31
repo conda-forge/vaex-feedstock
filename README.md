@@ -12,6 +12,18 @@ Summary: Python library/program to visualize and explore large (~billion rows/ob
 Veax is a program (and Python library) to visualize and explore large tabular datasets using statistics on an N-dimensional grid. It mainly renders histograms, density plots and volume rendering plots for visualization in the order of 109 rows in the order of 1 second. For exploration it support selection in 1 and 2d, but it can also analyse the columns (dimensions) to find subspaces which are richer in information than others.
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/vaex-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/vaex-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/vaex-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/vaex-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/vaex-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/vaex-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/vaex/badges/version.svg)](https://anaconda.org/conda-forge/vaex)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/vaex/badges/downloads.svg)](https://anaconda.org/conda-forge/vaex)
+
 Installing vaex
 ===============
 
@@ -32,7 +44,6 @@ It is possible to list all of the versions of `vaex` available on your platform 
 ```
 conda search vaex --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -68,18 +79,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/vaex-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/vaex-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/vaex-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/vaex-feedstock)
-Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/vaex/badges/version.svg)](https://anaconda.org/conda-forge/vaex)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/vaex/badges/downloads.svg)](https://anaconda.org/conda-forge/vaex)
 
 
 Updating vaex-feedstock
