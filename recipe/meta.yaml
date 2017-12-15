@@ -25,16 +25,11 @@ test:
   imports:
     - vaex
     - vaex.file
-    - vaex.misc
-    - vaex.test
-    - vaex.ui
-    - vaex.ui.icons
-    - vaex.ui.plugin
 
 app:
   entry: vaex
   icon: logo.png
-  summary: Out fore core dataframes and visualize for large (~billion rows/objects) tabular datasets
+  summary: Out of core dataframes and visualization for large (~billion rows/objects) tabular datasets
   type: desk
 
 about:
