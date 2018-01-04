@@ -18,6 +18,11 @@ requirements:
     - vaex-core
     - vaex-hdf5
     - vaex-viz
+    - vaex-astro
+    - vaex-server
+    - vaex-distributed
+    - vaex-jupyter
+    - vaex-ui
     - healpy  # [(not win) and (py27 or py34 or py35)]
     - python.app  # [osx]
 
@@ -29,18 +34,15 @@ test:
 app:
   entry: vaex
   icon: logo.png
-  summary: Out of core dataframes and visualization for large (~billion rows/objects) tabular datasets
+  summary: Lazy Out-of-core dataframes and visualization for large (~billion rows/objects) tabular datasets
   type: desk
 
 about:
   home: https://vaex.io
   license: MIT
   license_family: MIT
-  summary: 'Python library/program to visualize and explore large (~billion rows/objects) tabular datasets interactively.'
-  description: |
-      Veax is a program (and Python library) to visualize and explore large tabular datasets using statistics on an N-dimensional grid. It mainly renders histograms, density plots and volume rendering plots for visualization in the order of 109 rows in the order of 1 second. For exploration it support selection in 1 and 2d, but it can also analyse the columns (dimensions) to find subspaces which are richer in information than others.
-  doc_url: http://vaex.astro.rug.nl/latest
-  dev_url: http://vaex.astro.rug.nl/latest/api.html
+  summary: 'Lazy Out-of-core dataframes and visualization for large (~billion rows/objects) tabular datasets'
+  doc_url: http://docs.vaex.io
 
 extra:
   recipe-maintainers:
