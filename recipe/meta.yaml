@@ -24,8 +24,6 @@ requirements:
     - vaex-distributed
     - vaex-jupyter
     - vaex-ui
-    - healpy  # [(not win) and (py27 or py34 or py35)]
-    - python.app  # [osx]
 
 test:
   imports:
