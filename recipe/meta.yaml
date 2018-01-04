@@ -7,6 +7,7 @@ package:
 
 build:
   number: 0
+  noarch: python
 
 requirements:
   build:
@@ -42,7 +43,7 @@ about:
   license: MIT
   license_family: MIT
   summary: 'Lazy Out-of-core dataframes and visualization for large (~billion rows/objects) tabular datasets'
-  doc_url: http://docs.vaex.io
+  doc_url: https://docs.vaex.io
 
 extra:
   recipe-maintainers:
