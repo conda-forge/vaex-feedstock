@@ -7,17 +7,14 @@ Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: Python library/program to visualize and explore large (~billion rows/objects) tabular datasets interactively.
+Summary: Lazy Out-of-core dataframes and visualization for large (~billion rows/objects) tabular datasets
 
-Veax is a program (and Python library) to visualize and explore large tabular datasets using statistics on an N-dimensional grid. It mainly renders histograms, density plots and volume rendering plots for visualization in the order of 109 rows in the order of 1 second. For exploration it support selection in 1 and 2d, but it can also analyse the columns (dimensions) to find subspaces which are richer in information than others.
 
 
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/vaex-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/vaex-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/vaex-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/vaex-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/vaex-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/vaex-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/vaex-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/vaex-feedstock)
 
 Current release info
 ====================
