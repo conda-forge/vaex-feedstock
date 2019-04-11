@@ -9,7 +9,6 @@ package:
 build:
   number: 0
   noarch: python
-  skip: True  # [win and py27]
 
 requirements:
   build:
