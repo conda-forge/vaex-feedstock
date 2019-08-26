@@ -9,6 +9,7 @@ package:
 build:
   number: 0
   noarch: python
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   build:
@@ -20,7 +21,7 @@ requirements:
     - vaex-core >=1.0.0,<2
     - vaex-viz >=0.3.7,<0.4
     - vaex-server >=0.2.1,<0.3
-    - vaex-hdf5 >=0.5.4,<0.6'
+    - vaex-hdf5 >=0.5.4,<0.6
     - vaex-astro >=0.6.1,<0.7
     - vaex-arrow >=0.3.5,<0.4
     # - vaex-distributed
