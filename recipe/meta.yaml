@@ -44,6 +44,7 @@ about:
   home: https://vaex.io
   license: MIT
   license_family: MIT
+  license_file: LICENSE.txt
   summary: 'Lazy Out-of-core dataframes and visualization for large (~billion rows/objects) tabular datasets'
   doc_url: https://docs.vaex.io
 
