@@ -1,18 +1,18 @@
 {% set name = "vaex" %}
-{% set version = "2.3.0" %}
-{% set sha256 = "2fd74d62cad4e809b505a675c478bce971c2585c0c454dcc43c4a2fce6b2c26c" %}
+{% set version = "2.4.0" %}
+{% set sha256 = "9d7679de5591012be524fb158f4c92570353f311c4754d9d7dc13dd249432cfd" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
 
 requirements:
   build:
-    - python
+    - python >=3.6
     - setuptools
     - pip
   run:
@@ -20,12 +20,14 @@ requirements:
     - vaex-core >=1.2.0,<2
     - vaex-viz >=0.3.8,<0.4
     - vaex-server >=0.2.1,<0.3
-    - vaex-hdf5 >=0.5.5,<0.6
+    - vaex-hdf5 >=0.5.6,<0.6
     - vaex-astro >=0.6.1,<0.7
     - vaex-arrow >=0.4.1,<0.5
+    - vaex-jupyter >=0.4.1,<0.5
+    - vaex-ml >=0.6.2,<0.7
     # - vaex-distributed
-    # - vaex-jupyter
     # - vaex-ui
+    # - vaex-graphql
 
 test:
   imports:
@@ -42,6 +44,7 @@ about:
   home: https://vaex.io
   license: MIT
   license_family: MIT
+  license_file: LICENSE.txt
   summary: 'Lazy Out-of-core dataframes and visualization for large (~billion rows/objects) tabular datasets'
   doc_url: https://docs.vaex.io
 
