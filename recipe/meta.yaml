@@ -1,6 +1,6 @@
 {% set name = "vaex" %}
-{% set version = "2.5.0" %}
-{% set sha256 = "7992cbd6241f60b7f984ad20d672f5770d50b1700946878f09e28e96bb086214" %}
+{% set version = "2.6.0" %}
+{% set sha256 = "7ce491f7fcfe37d407ee04f1de74d14edbd02175ea0b6270d1c370c1e0cebbb3" %}
 
 package:
   name: {{ name|lower }}
@@ -17,14 +17,14 @@ requirements:
     - pip
   run:
     - python
-    - vaex-core >=1.4.0,<2
+    - vaex-core >=1.5.0,<2
     - vaex-viz >=0.3.8,<0.4
     - vaex-server >=0.2.1,<0.3
     - vaex-hdf5 >=0.5.6,<0.6
     - vaex-astro >=0.6.1,<0.7
     - vaex-arrow >=0.4.2,<0.5
     - vaex-jupyter >=0.4.1,<0.5
-    - vaex-ml >=0.7,<0.8
+    - vaex-ml >=0.8,<0.9
     # - vaex-distributed
     # - vaex-ui
     # - vaex-graphql
