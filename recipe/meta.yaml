@@ -16,7 +16,7 @@ requirements:
     - setuptools
     - pip
   run:
-    - python
+    - python >=3.6
     - vaex-astro <0.9,>=0.8.0
     - vaex-core <5,>=4.0.0
     - vaex-hdf5 <0.8,>=0.7.0
