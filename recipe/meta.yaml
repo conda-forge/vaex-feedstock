@@ -1,6 +1,6 @@
 {% set name = "vaex" %}
-{% set version = "4.9.0" %}
-{% set sha256 = "c1d3dfefd4d2d5a7c2750a3ff15cbb07d19a7fa1a28e706f6c156c10e5941803" %}
+{% set version = "4.9.2" %}
+{% set sha256 = "b3904fcc4030994a0887ed30f84998bb1edac79fbb9cee255c46c3db6939dd13" %}
 
 package:
   name: {{ name|lower }}
@@ -22,7 +22,7 @@ requirements:
     - vaex-hdf5 <0.13,>=0.12.2
     - vaex-viz <0.6,>=0.5.2
     - vaex-server <0.9,>=0.8.1
-    - vaex-jupyter <0.9,>=0.9.0
+    - vaex-jupyter <0.9,>=0.8.0
     - vaex-ml <0.18,>=0.17.0
     # - vaex-distributed
     # - vaex-ui
