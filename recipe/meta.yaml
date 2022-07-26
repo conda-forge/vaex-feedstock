@@ -1,6 +1,6 @@
 {% set name = "vaex" %}
-{% set version = "4.11.0" %}
-{% set sha256 = "526e04900f911f446902cffc55ad01ea8b88fcd27e56805d9fc66aa68ac2bb72" %}
+{% set version = "4.11.1" %}
+{% set sha256 = "6a5da199e8615a799bd9425f459529218ca4dcae150bbb3a5b2a6dd22c06d482" %}
 
 package:
   name: {{ name|lower }}
@@ -17,7 +17,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - vaex-core <4.12.0,>=4.11
+    - vaex-core <4.12.0,>=4.11.1
     - vaex-astro <0.10,>=0.9.1
     - vaex-hdf5 <0.13,>=0.12.3
     - vaex-viz <0.6,>=0.5.2
