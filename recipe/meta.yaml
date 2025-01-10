@@ -7,16 +7,16 @@ package:
   version: {{ version }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
 
 requirements:
-  build:
-    - python >=3.6
+  host:
+    - python {{ python_min }}
     - setuptools
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - vaex-core <4.17.0,>=4.16.0
     - vaex-astro <0.10,>=0.9.3
     - vaex-hdf5 <0.15,>=0.13.0
@@ -29,6 +29,8 @@ requirements:
     # - vaex-graphql
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - vaex
     - vaex.file
