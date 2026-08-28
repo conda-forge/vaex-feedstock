@@ -14,7 +14,7 @@ build:
   script:
     content: |
       ${{ PYTHON }} -m pip install $SRC_DIR/vaex-${{ version }}-py3-none-any.whl --no-deps -vv
-      unzip -p $SRC_DIR/vaex-${{ version }}-py3-none-any.whl vaex-${{ version }}.dist-info/licenses/LICENSE.txt > $SRC_DIR/LICENSE.txt
+      ${{ PYTHON }} -c "import zipfile, shutil; z=zipfile.ZipFile('vaex-${{ version }}-py3-none-any.whl'); z.extract('vaex-${{ version }}.dist-info/licenses/LICENSE.txt'); shutil.copy('vaex-${{ version }}.dist-info/licenses/LICENSE.txt', 'LICENSE.txt')"
   number: 0
 
 requirements:
