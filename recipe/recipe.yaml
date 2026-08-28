@@ -1,0 +1,62 @@
+context:
+  version: "4.19.0"
+
+package:
+  name: vaex
+  version: ${{ version }}
+
+source:
+  url: https://files.pythonhosted.org/packages/e6/30/ba7507d4102777b645ab701e66d5d16f9e797a056c382d7dc4df4190c88b/vaex-${{ version }}-py3-none-any.whl
+  sha256: de1539002a61cec4d58a94992a5600f06380f9a19a85c4d6693de06ed651f4c9
+
+build:
+  noarch: python
+  script:
+    content: |
+      ${{ PYTHON }} -m pip install $SRC_DIR/vaex-${{ version }}-py3-none-any.whl --no-deps -vv
+      unzip -p $SRC_DIR/vaex-${{ version }}-py3-none-any.whl vaex-${{ version }}.dist-info/licenses/LICENSE.txt > $SRC_DIR/LICENSE.txt
+  number: 0
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - pip
+  run:
+    - python >=${{ python_min }}
+    - vaex-core >=4.19.0,<4.20.0
+    - vaex-astro >=0.9.3,<0.11
+    - vaex-hdf5 >=0.13.0,<0.16
+    - vaex-viz >=0.6.0,<0.7
+    - vaex-server >=0.10.0,<0.11.0
+    - vaex-jupyter >=0.8.2,<0.10
+    - vaex-ml >=0.18.3,<0.20
+
+tests:
+  - python:
+      imports:
+        - vaex.meta
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+
+about:
+  homepage: https://vaex.io
+  summary: Out-of-Core DataFrames to visualize and explore big tabular datasets
+  description: |
+    Vaex is a high performance Python library for lazy Out-of-Core DataFrames
+    (similar to Pandas), to visualize and explore big tabular datasets. It
+    calculates statistics such as mean, sum, count, standard deviation etc, on an
+    N-dimensional grid for more than a billion samples/rows per second.
+    Visualization is done using histograms, density plots and 3d volume rendering,
+    allowing interactive exploration of big data.
+  license: MIT
+  license_file: LICENSE.txt
+  documentation: https://vaex.readthedocs.io
+  repository: https://github.com/vaexio/vaex
+
+extra:
+  recipe-maintainers:
+    - maartenbreddels
+    - JovanVeljanoski
+    - m0nonoke
