@@ -3,13 +3,22 @@ About vaex-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/vaex-feedstock/blob/main/LICENSE.txt)
 
-Home: https://vaex.io
+Home: https://vaex.io/
 
 Package license: MIT
 
-Summary: Lazy Out-of-core dataframes and visualization for large (~billion rows/objects) tabular datasets
+Summary: Out-of-Core DataFrames to visualize and explore big tabular datasets
 
-Documentation: https://vaex.io/docs
+Development: https://github.com/vaexio/vaex
+
+Documentation: https://vaex.readthedocs.io/
+
+Vaex is a high performance Python library for lazy Out-of-Core DataFrames
+(similar to Pandas), to visualize and explore big tabular datasets. It
+calculates statistics such as mean, sum, count, standard deviation etc, on an
+N-dimensional grid for more than a billion samples/rows per second.
+Visualization is done using histograms, density plots and 3d volume rendering,
+allowing interactive exploration of big data.
 
 Current build status
 ====================
@@ -191,5 +200,6 @@ Feedstock Maintainers
 =====================
 
 * [@JovanVeljanoski](https://github.com/JovanVeljanoski/)
+* [@m0nonoke](https://github.com/m0nonoke/)
 * [@maartenbreddels](https://github.com/maartenbreddels/)
 
