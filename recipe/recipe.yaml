@@ -1,13 +1,13 @@
 context:
-  version: "4.19.0"
+  version: "4.20.0"
 
 package:
   name: vaex
   version: ${{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/e6/30/ba7507d4102777b645ab701e66d5d16f9e797a056c382d7dc4df4190c88b/vaex-${{ version }}-py3-none-any.whl
-  sha256: de1539002a61cec4d58a94992a5600f06380f9a19a85c4d6693de06ed651f4c9
+  url: https://files.pythonhosted.org/packages/11/c6/6a14ead704f2c6382bbc54d403c925bbbee68d8d498f9653fb6679108737/vaex-${{ version }}-py3-none-any.whl
+  sha256: c1e6ec58427b221ad5bdcd59fcb898db331e3f4116ec5e9b296af58a413c9cc5
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ requirements:
     - setuptools
   run:
     - python >=${{ python_min }}
-    - vaex-core >=4.19.0,<4.20.0
+    - vaex-core >=4.20.0,<4.21.0
     - vaex-astro >=0.9.3,<0.11
     - vaex-hdf5 >=0.13.0,<0.16
     - vaex-viz >=0.6.0,<0.7
