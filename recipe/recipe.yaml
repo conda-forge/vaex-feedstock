@@ -6,15 +6,12 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/11/c6/6a14ead704f2c6382bbc54d403c925bbbee68d8d498f9653fb6679108737/vaex-${{ version }}-py3-none-any.whl
-  sha256: c1e6ec58427b221ad5bdcd59fcb898db331e3f4116ec5e9b296af58a413c9cc5
+  url: https://pypi.org/packages/source/v/vaex/vaex-${{ version }}.tar.gz
+  sha256: d206599858cf49aec098516eb927d8f9f6d2256c9e21dd103095f3180f279b40
 
 build:
   noarch: python
-  script:
-    content: |
-      ${{ PYTHON }} -m pip install $SRC_DIR/vaex-${{ version }}-py3-none-any.whl --no-deps -vv
-      ${{ PYTHON }} -c "import zipfile, shutil; z=zipfile.ZipFile('vaex-${{ version }}-py3-none-any.whl'); z.extract('vaex-${{ version }}.dist-info/licenses/LICENSE.txt'); shutil.copy('vaex-${{ version }}.dist-info/licenses/LICENSE.txt', 'LICENSE.txt')"
+  script: ${{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv
   number: 0
 
 requirements:
